@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <link rel="stylesheet" href="styles/budget.css">
+</head>
+
+<body>
+    <header>
+        <h1>Budget Planner</h1>
+    </header>
+
+    <main class="budget-container">
+
+        <!-- Income Section -->
+        <section class="income-section">
+        <h2>Enter Amount of Income</h2>
+        <input type="number" id="income-input" placeholder="Enter income amount">
+        <button id="add-income">Enter</button>
+        </section>
+
+        <!-- Expense Section -->
+        <section class="expense-section">
+        <h2>Expenses</h2>
+        <div class="expense-inputs">
+            <input type="number" id="expense-amount" placeholder="Amount">
+            <select id="expense-type">
+                <option value="entertainment">Entertainment</option>
+                <option value="food">Food</option>
+                <option value="investments">Investments</option>
+                <option value="rent">Rent</option>
+                <option value="transportation">Transportation</option>
+                <option value="utilities">Utilities</option>
+            </select>
+            <button id="add-expense">Add</button>
+      </div>
+
+      <h3>List of Expenses</h3>
+      <ul id="expense-list"></ul>
+    </section>
+
+    <!-- Display section -->
+    <section class="display-section">
+      <h2>Budget Summary</h2>
+        <p>Total Income: $<span id="total-income">0</span></p>
+        <p>Total Expenses: $<span id="total-expense">0</span></p>
+        <p>Balance: $<span id="balance">0</span></p>
+    </section>
+
+    </main>
+    <script src="scripts/budget.js"></script>
+</body>
+</html>
+
+
+
+
